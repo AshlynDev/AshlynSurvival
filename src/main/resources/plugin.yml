@@ -8,3 +8,9 @@ commands:
   hat:
     description: Stylish
     usage: /hat
+  coords:
+    description: Sends player's coords
+    usage: /coords
+  bccoords:
+    description: Broadcasts player's coords
+    usage: /coords
