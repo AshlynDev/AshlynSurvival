@@ -2,6 +2,7 @@ package nl.ashlyn.ashlynsurvival;
 
 import nl.ashlyn.ashlynsurvival.commands.HatCommand;
 import nl.ashlyn.ashlynsurvival.listener.PlayerJoinLeaveEvent;
+import nl.ashlyn.ashlynsurvival.listener.PlayerSleepEvent;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -14,6 +15,7 @@ public final class AshlynSurvival extends JavaPlugin {
         AshlynSurvival.log(ChatColor.DARK_PURPLE + "AshlynSurvival Initiated! (Build: JA-1.0.0)");
         AshlynSurvival.log(ChatColor.DARK_PURPLE + "+=========================================+");
         Bukkit.getPluginManager().registerEvents(new PlayerJoinLeaveEvent(), this);
+        Bukkit.getPluginManager().registerEvents(new PlayerSleepEvent(), this);
         Objects.requireNonNull(this.getCommand("hat")).setExecutor(new HatCommand());
     }
     public static void log(String message) {

@@ -11,15 +11,6 @@ import org.bukkit.event.Listener;
 import org.bukkit.command.CommandExecutor;
 
 public class HatCommand implements CommandExecutor, Listener {
-    String setMessage;
-
-    String stackSizeMessage;
-
-    String noPermissionMessage;
-
-    String consoleMessage;
-
-
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (sender instanceof Player) {
