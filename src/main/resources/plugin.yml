@@ -1,0 +1,6 @@
+name: AshlynSurvival
+version: '${project.version}'
+main: nl.ashlyn.ashlynsurvival.AshlynSurvival
+api-version: 1.19
+authors: [ Ashlyn ]
+description: Custom plugin for my SMP Server that I run for my friends
