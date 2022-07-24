@@ -10,9 +10,9 @@ import java.util.Objects;
 
 public final class AshlynSurvival extends JavaPlugin {
     public void onEnable() {
-        AshlynSurvival.log(ChatColor.GREEN+"+=========================================+");
-        AshlynSurvival.log(ChatColor.GREEN+"AshlynSurvival Initiated! (Build: JA-1.0.0)");
-        AshlynSurvival.log(ChatColor.GREEN+"+=========================================+");
+        AshlynSurvival.log(ChatColor.DARK_PURPLE + "+=========================================+");
+        AshlynSurvival.log(ChatColor.DARK_PURPLE + "AshlynSurvival Initiated! (Build: JA-1.0.0)");
+        AshlynSurvival.log(ChatColor.DARK_PURPLE + "+=========================================+");
         Bukkit.getPluginManager().registerEvents(new PlayerJoinLeaveEvent(), this);
         Objects.requireNonNull(this.getCommand("hat")).setExecutor(new HatCommand());
     }
