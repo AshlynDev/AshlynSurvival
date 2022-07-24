@@ -10,12 +10,13 @@ import java.util.Objects;
 
 public final class AshlynSurvival extends JavaPlugin {
     public void onEnable() {
-        Bukkit.getLogger().info("Anddddd Ashlyn's plugin is live!");
+        AshlynSurvival.log(ChatColor.GREEN+"+=========================================+");
+        AshlynSurvival.log(ChatColor.GREEN+"AshlynSurvival Initiated! (Build: JA-1.0.0)");
+        AshlynSurvival.log(ChatColor.GREEN+"+=========================================+");
         Bukkit.getPluginManager().registerEvents(new PlayerJoinLeaveEvent(), this);
         Objects.requireNonNull(this.getCommand("hat")).setExecutor(new HatCommand());
     }
-
-    public void onDisable() {
-        Bukkit.getLogger().info("Bye bye <3");
+    public static void log(String message) {
+        Bukkit.getConsoleSender().sendMessage(message);
     }
 }
