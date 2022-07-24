@@ -6,7 +6,7 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.Listener;
 
-public class PlayerJoinLeaveEvent implements Listener {
+public class onPlayerJoinLeaveEvent implements Listener {
     @EventHandler
     public void joinEvent(final PlayerJoinEvent e) {
         String player = e.getPlayer().getName();

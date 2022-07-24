@@ -7,7 +7,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerBedEnterEvent;
 import org.bukkit.event.player.PlayerBedLeaveEvent;
 
-public class PlayerSleepEvent implements Listener {
+public class onPlayerSleepEvent implements Listener {
     @EventHandler
     public void onPlayerSleep(final PlayerBedEnterEvent e) {
         if (e.isCancelled()) {
