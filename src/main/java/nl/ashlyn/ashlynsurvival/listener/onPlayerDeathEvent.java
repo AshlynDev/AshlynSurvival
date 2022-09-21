@@ -9,6 +9,7 @@ public class onPlayerDeathEvent implements Listener {
     @EventHandler
     public void quitEvent(final PlayerDeathEvent e) {
         String entity = e.getEntity().getName();
-        e.setDeathMessage(ChatColor.RED + entity + " is naar de hemel gegaan");
+        String kille = e.getEntity().getKiller().getName();
+        e.setDeathMessage(ChatColor.RED + entity + " is naar de hemel gegaan door " + kille);
     }
 }

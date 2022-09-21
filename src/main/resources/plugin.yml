@@ -14,3 +14,9 @@ commands:
   bccoords:
     description: Broadcasts player's coords
     usage: /coords
+  herstart:
+    description: Restart server
+    usage: /herstart
+  spawn:
+    description: Tp to Spawn
+    usage: /spawn

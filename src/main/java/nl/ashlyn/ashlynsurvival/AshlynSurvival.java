@@ -1,8 +1,6 @@
 package nl.ashlyn.ashlynsurvival;
 
-import nl.ashlyn.ashlynsurvival.commands.BCCoordsCommand;
-import nl.ashlyn.ashlynsurvival.commands.CoordsCommand;
-import nl.ashlyn.ashlynsurvival.commands.HatCommand;
+import nl.ashlyn.ashlynsurvival.commands.*;
 import nl.ashlyn.ashlynsurvival.listener.onPlayerJoinLeaveEvent;
 import nl.ashlyn.ashlynsurvival.listener.onPlayerSleepEvent;
 import nl.ashlyn.ashlynsurvival.listener.onPlayerDeathEvent;
@@ -23,6 +21,8 @@ public final class AshlynSurvival extends JavaPlugin {
         Objects.requireNonNull(this.getCommand("hat")).setExecutor(new HatCommand());
         Objects.requireNonNull(this.getCommand("coords")).setExecutor(new CoordsCommand());
         Objects.requireNonNull(this.getCommand("bccoords")).setExecutor(new BCCoordsCommand());
+        Objects.requireNonNull(this.getCommand("herstart")).setExecutor(new RestartCommand());
+        Objects.requireNonNull(this.getCommand("spawn")).setExecutor(new SpawnCommand());
     }
     public static void log(String message) {
         Bukkit.getConsoleSender().sendMessage(message);
