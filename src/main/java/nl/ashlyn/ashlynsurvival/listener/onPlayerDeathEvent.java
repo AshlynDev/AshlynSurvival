@@ -8,8 +8,8 @@ import org.bukkit.event.entity.PlayerDeathEvent;
 public class onPlayerDeathEvent implements Listener {
     @EventHandler
     public void quitEvent(final PlayerDeathEvent e) {
-        String entity = e.getEntity().getName();
-        String kille = e.getEntity().getKiller().getName();
-        e.setDeathMessage(ChatColor.RED + entity + " is naar de hemel gegaan door " + kille);
+        String player = e.getEntity().getName();
+        String killer = e.getEntity().getKiller().getDisplayName();
+        e.setDeathMessage(ChatColor.RED + player + " is naar de hemel gegaan door " + killer);
     }
 }
