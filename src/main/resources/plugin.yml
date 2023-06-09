@@ -13,10 +13,16 @@ commands:
     usage: /coords
   bccoords:
     description: Broadcasts player's coords
-    usage: /coords
+    usage: /bcoords
   herstart:
     description: Restart server
     usage: /herstart
   spawn:
     description: Tp to Spawn
     usage: /spawn
+  sethome:
+    description: Set players home.
+    usage: /sethome
+  home:
+    description: tps player to set home.
+    usage: /home

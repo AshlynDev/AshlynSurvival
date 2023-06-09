@@ -23,6 +23,6 @@ public class CoordsCommand implements CommandExecutor, Listener {
             player.sendMessage(ChatColor.RED + "X: " + x + ChatColor.GREEN + " Y: " + y + ChatColor.BLUE + " Z: " + z);
             return true;
         }
-        return false;
+        return true;
     }
 }

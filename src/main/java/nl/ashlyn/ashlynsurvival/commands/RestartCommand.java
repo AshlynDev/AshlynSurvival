@@ -20,6 +20,6 @@ public class RestartCommand implements CommandExecutor, Listener {
             Bukkit.dispatchCommand(console, restartcommand);
             return true;
         }
-        return false;
+        return true;
     }
 }

@@ -1,0 +1,14 @@
+show-sethome-message: true
+sethome-message: '&aYou now have a new home, &6%player%&a!'
+
+show-teleport-message: false
+teleport-message: '&aYou have been teleported to your home, &6%player%&a!'
+
+play-warp-sound: true
+respawn-player-at-home: true
+
+sethome-command-delay: false
+sethome-time-delay: 5
+
+home-command-delay: true
+home-time-delay: 5

@@ -22,6 +22,6 @@ public class BCCoordsCommand implements CommandExecutor, Listener {
             Bukkit.getServer().broadcastMessage(ChatColor.LIGHT_PURPLE + "Coords van " + player.getDisplayName() +  " zijn: " + ChatColor.RED + "X: " + x + ChatColor.GREEN + " Y: " + y + ChatColor.BLUE + " Z: " + z);
             return true;
         }
-        return false;
+        return true;
     }
 }

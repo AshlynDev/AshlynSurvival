@@ -26,6 +26,6 @@ public class HatCommand implements CommandExecutor, Listener {
                 return true;
             }
         }
-        return false;
+        return true;
     }
 }
