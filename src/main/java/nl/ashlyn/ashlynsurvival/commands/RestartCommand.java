@@ -15,9 +15,9 @@ public class RestartCommand implements CommandExecutor, Listener {
         if (sender instanceof Player) {
             Player player = (Player) sender;
             ConsoleCommandSender console = Bukkit.getServer().getConsoleSender();
-            String restartcommand = "restart";
             Bukkit.getServer().broadcastMessage(ChatColor.RED + "Server herstart aangevraagt door " + player.getDisplayName());
-            Bukkit.dispatchCommand(console, restartcommand);
+            //TODO: Add delay
+            Bukkit.dispatchCommand(console, "restart");
             return true;
         }
         return true;

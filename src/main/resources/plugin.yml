@@ -26,3 +26,6 @@ commands:
   home:
     description: tps player to set home.
     usage: /home
+  heal:
+    description: heals a player
+    usage: /heal

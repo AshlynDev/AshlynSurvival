@@ -110,6 +110,7 @@ public final class AshlynSurvival extends JavaPlugin {
         Objects.requireNonNull(this.getCommand("spawn")).setExecutor(new SpawnCommand());
         Objects.requireNonNull(this.getCommand("sethome")).setExecutor(this);
         Objects.requireNonNull(this.getCommand("home")).setExecutor(this);
+        Objects.requireNonNull(this.getCommand("heal")).setExecutor(new HealCommand());
         getServer().getPluginManager().registerEvents(new SetHomeEvent(this), this);
 
         config.options().copyDefaults(true);
