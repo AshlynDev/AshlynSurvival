@@ -14,7 +14,6 @@ public class CoordsCommand implements CommandExecutor, Listener {
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (sender instanceof Player) {
             Player player = (Player) sender;
-            // get location and location fragments
             Location loc = player.getLocation();
 
             double x = loc.getX();

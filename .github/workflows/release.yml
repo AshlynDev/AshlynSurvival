@@ -34,12 +34,16 @@ jobs:
           tag_name: Build-${{ github.run_number }}
           name: Ashlyn Survival Version ${{ env.version }}
           draft: false
-          prerelease: true
+          prerelease: false
           files: target/AshlynSurvival.jar
           body: |
+            # Full rewrite coming soon!
+            
             Build Number: ${{ github.run_number }}
             
-            # ⚠ THIS BUILD IS EXPERIMENTAL AND MIGHT NOT WORK! ⚠
+            - Removed Heal Command
+            - Removed Spawn Command
+            - Removed Restart Command
 
             For any questions or issues, feel free to open an issue.
 
