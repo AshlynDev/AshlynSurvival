@@ -1,0 +1,42 @@
+name: Create Release
+
+on:
+  push:
+    branches:
+      - 'main'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Java 8
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '8'
+
+      - name: Build with Maven
+        run: mvn clean package -DskipTests
+
+      - name: Publish JAR as Release
+        uses: softprops/action-gh-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: Build-${{ github.run_number }}
+          name: Build ${{ github.run_number }}
+          draft: false
+          prerelease: true
+          files: target/AshlynSurvival.jar
+          body: |
+            Build Number: ${{ github.run_number }}
+            
+            # ⚠ THIS BUILD IS EXPERIMENTAL AND MIGHT NOT WORK! ⚠
+
+            For any questions or issues, feel free to open an issue.
+
+            Happy crafting!
